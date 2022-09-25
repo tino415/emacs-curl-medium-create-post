@@ -44,7 +44,11 @@ of good tutorials to do that on the web.
 
 ## Create post API
 
-To create post API, we can use endpoint `POST https://api.medium.com/v1/users/{{authorId}}/posts`
+To create post API, we can use endpoint
+
+```
+POST https://api.medium.com/v1/users/{{authorId}}/posts
+```
 
 In the documentation is this example for that call:
 
@@ -100,7 +104,7 @@ I'm ignoring `canonicalUrl`, since it is optional and don't need it for now.
 ## Retrieve user id
 
 To be able to call s API we also need to know our user id, I did not find
-other way of obtaining besides calling endpoint `https://api.medium.com/v1/me`
+other way of obtaining besides calling endpoint `https://api.medium.com/v1/me`.
 You can use this curl command:
 
 ```sh
@@ -167,7 +171,7 @@ string. So cURL call to API would look like this:
 
 Notice that I'm using `string-join` to simply make that big string more readable. 
 
-Before publishing, we need to retrieve title and tags for published post,
+Before publishing, we need to retrieve title and tags for post,
 title is easy, we can simply use interactive command shortcuts to ask 
 for information during publishing. Tags would be nicer to have auto-complete
 for different tags, but lets not complicate things too much for now.
@@ -398,6 +402,7 @@ Now when we run `medium-create-post` in markdown buffer, after filling title and
 it will create post on medium. If you would like to inspect source code of this
 article and module it is about, you can find it on
 [github](https://github.com/tino415/emacs-curl-medium-create-post).
+This post was also published using this module.
 
 Thank you for reading.
 
