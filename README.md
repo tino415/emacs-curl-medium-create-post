@@ -1,4 +1,4 @@
-# Emacs cURL medium article upload
+# Integrate Emacs and medium using cURL
 
 From time to time I write articles and I chose medium as platform where to write. 
 But I'm also recent Emacs convert and I would prefer to write articles in text editor of my
